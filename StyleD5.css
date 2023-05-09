@@ -1,0 +1,55 @@
+div {
+    display: inline-block;
+}
+
+.container div:nth-child(even) {
+    border: 1px solid red;
+    
+}
+
+.container:nth-child(odd) div:nth-child(odd) span:nth-child(even) {
+    color: green;
+}
+
+.container :nth-child(2) :last-of-type{
+    color: blue;
+}
+
+.container :nth-child(6) :not(:last-of-type) {
+    color: yellow;
+}
+
+
+span:first-child {
+    position: absolute;
+    top: 140px;
+    padding-left: 30px;
+}
+
+span:nth-child(2) {
+    position: absolute;
+    top: 50px;
+    padding-left: 30px;
+}
+
+.container :last-child :last-of-type {
+    position: absolute;
+    top: 95px;
+    left: 800px;
+}
+
+.container :first-child :last-of-type {
+    position: absolute;
+    top: 95px;
+    left: 50px;
+}
+
+.container {
+    font-size: 0;
+} 
+
+.container div {
+    font-size: 1rem;
+}
+
+
